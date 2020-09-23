@@ -7,11 +7,9 @@
   <div class="card-product">
     <%= image_tag album["im:image"][0]["label"] %>
     <div class="card-product-infos">
-      <strong><%= album["im:name"]["label"] %></strong>
-      <br>
-      <%= album["im:artist"]["label"] %>
-      <br>
-      <%= album["category"]["attributes"]["term"] %>
+      <h5><strong><%= album["im:name"]["label"] %></strong></h5>
+      <p><%= album["im:artist"]["label"] %></p>
+      <p><%= album["category"]["attributes"]["term"] %></p>
     </div>
   </div>
 
