@@ -7,7 +7,6 @@ class PagesController < ApplicationController
       file_serialized = open(url).read
       file = JSON.parse(file_serialized)
       @albums = file["feed"]["entry"]
-      # @artist = @albums["im:artist"]["label"]
     end
 end
   
