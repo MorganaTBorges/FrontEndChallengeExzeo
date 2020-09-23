@@ -1,20 +1,17 @@
-<% @albums.each do |album| %>
+<div class="flex-container">
 
-  <div class="card-trip">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-    <div class="card-trip-infos">
-      <div>
-          <%= album["im:name"]["label"] %>
-          <br>
-          <%= album["im:artist"]["label"] %>
-          <br>
-          <%= album["category"]["attributes"]["term"] %>
-      </div>
-      <h2 class="card-trip-pricing"> <%= album["im:price"]["label"] %></h2>
-      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+  <% @albums.each do |album| %>
+
+  <div class="card-product">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <div class="card-product-infos">
+      <%= album["im:name"]["label"] %>
+            <br>
+            <%= album["im:artist"]["label"] %>
+            <br>
+            <%= album["category"]["attributes"]["term"] %>
     </div>
   </div>
 
-<% end %>
-
-
+  <% end %>
+</div>
