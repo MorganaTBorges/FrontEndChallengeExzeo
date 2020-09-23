@@ -1,8 +1,16 @@
+//Colors
+  $color-one: #1F2124;
+  $color-two: #383A3F;
+  $color-three: #F68657;
+  $color-four: #F6B352;
+
 .card-product {
   overflow: hidden;
   height: 100px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background: $color-one;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  border-radius: 5px;
+  color: white;
   display: flex;
   align-items: center;
   width: 30%;
