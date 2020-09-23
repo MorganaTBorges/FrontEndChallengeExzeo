@@ -3,14 +3,13 @@
   <% @albums.each do |album| %>
 
   <div class="card-product">
-    <%# <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /> %>
     <%= image_tag album["im:image"][0]["label"] %>
     <div class="card-product-infos">
-      <%= album["im:name"]["label"] %>
-            <br>
-            <%= album["im:artist"]["label"] %>
-            <br>
-            <%= album["category"]["attributes"]["term"] %>
+      <strong><%= album["im:name"]["label"] %></strong>
+      <br>
+      <%= album["im:artist"]["label"] %>
+      <br>
+      <%= album["category"]["attributes"]["term"] %>
     </div>
   </div>
 
