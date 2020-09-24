@@ -1,5 +1,14 @@
 <h1>Itunes top 100 albums</h1>
 
+<%= form_tag root_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find an album"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+
 <div class="flex-container">
 
   <% @albums.each do |album| %>
