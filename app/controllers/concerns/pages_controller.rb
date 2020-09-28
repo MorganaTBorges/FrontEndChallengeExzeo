@@ -7,10 +7,6 @@ class PagesController < ApplicationController
       file_serialized = open(url).read
       @file = JSON.parse(file_serialized)
       @albums = @file["feed"]["entry"]
-
-      # if params[:query].present?
-        
-      # end
     end
 end
   
